@@ -16,13 +16,7 @@ jobs:
       fail-fast: false
       matrix:
         game:
-          - altv
-          - arma3
-          - dayz
-          - mohaa
-          - samp
           - source
-          - valheim
           
     steps:
       - uses: actions/checkout@v3
@@ -41,4 +35,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/parkervcp/games:${{ matrix.game }}
+            ghcr.io/5gaming/games:${{ matrix.game }}
